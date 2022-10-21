@@ -5,6 +5,8 @@ import { useRef } from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import { GiOldMicrophone} from 'react-icons/gi'
 import { GoSearch } from 'react-icons/go'
+import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
     const router = useRouter();
@@ -55,7 +57,11 @@ function Header() {
                <button hidden type='submit' onClick={search}>Search</button>
              
             </form> 
+
+            <Avatar  className="ml-auto" url='https://coaching.papareact.com/ai9' />
            </div>
+
+           <HeaderOptions />
             
         </header>
     )
