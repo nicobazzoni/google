@@ -30,6 +30,11 @@ function SearchResults({ results }) {
             <p className="line-clamp-2 text-gray-900 font-OpenSans">
               {result.snippet}
             </p>
+
+            <img className
+            src={result.pagemap?.cse_image?.[0]?.src}
+            
+            />
           </div>
         ))}
 
