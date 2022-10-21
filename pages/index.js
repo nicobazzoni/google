@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import { useRef } from 'react'
 import { useRouter } from 'next/router'
 
-export default function Home({}) {
+export default function Home({term}) {
   const router = useRouter()
 
   const searchInputRef = useRef(null)

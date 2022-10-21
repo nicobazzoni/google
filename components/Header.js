@@ -7,15 +7,17 @@ import { GiOldMicrophone} from 'react-icons/gi'
 import { GoSearch } from 'react-icons/go'
 
 function Header() {
-    const router = useRouter()
-    const searchInputRef = useRef(null)
-    
+    const router = useRouter();
+    const searchInputRef = useRef(null);
+  
     const search = (e) => {
-        e.preventDefault()
-        const term = searchInputRef.current.value;
-        if(!term) return;
-        router.push(`/search?term=${term}`)
-    }
+      e.preventDefault();
+      const term = searchInputRef.current.value;
+  
+      if (!term) return;
+  
+      router.push(`/search?term=${term}`);
+    };
    
 
     return (
@@ -35,7 +37,7 @@ function Header() {
             />
            
 
-            <form className='flex flex-grow px-6 py-3 ml-10 mr-5 border border-gray-200 rounded-full shadow-lg   max-w-3 items-center '  >
+            <form className='flex flex-grow px-6 py-3 ml-10 mr-5 border border-gray-200 rounded-full shadow-lg max-w-3 items-center '  >
                 <input 
                 ref={searchInputRef} 
                 type="text"
@@ -60,4 +62,5 @@ function Header() {
 
 }
 
-export default Header 
+export default Header
+

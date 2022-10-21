@@ -3,10 +3,13 @@ import Header from '../components/Header'
 
 
 function Search() {
-  return <Head>
+  return (
+  <div>
+  
+  <Head>
     <title>Search Results</title>
     <link rel='icon' href="/favicon.ico" />
-
+    </Head>
     {/* header */}
 
     <Header />
@@ -15,7 +18,9 @@ function Search() {
 
     {/* results */}
     <h1>Search</h1>
-  </Head>;
+  
+  </div>
+  )
 }
 
 export default Search;
