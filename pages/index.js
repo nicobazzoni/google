@@ -53,7 +53,7 @@ export default function Home({term}) {
 
     
 
-       <Avatar url='https://coaching.papareact.com/ai9' />
+     
       </header>
 
 
