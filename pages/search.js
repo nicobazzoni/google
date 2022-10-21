@@ -1,10 +1,15 @@
 import Head from 'next/head'
+import Header from '../components/Header'
+
 
 function Search() {
   return <Head>
     <title>Search Results</title>
+    <link rel='icon' href="/favicon.ico" />
 
     {/* header */}
+
+    <Header />
     
 
 
