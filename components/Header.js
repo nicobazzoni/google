@@ -50,15 +50,13 @@ function Header() {
                 onClick={() => (searchInputRef.current.value = "")}
                 />
 
-             <GiOldMicrophone 
-             className='mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2  border-gray-300' />
-               
-               <GoSearch className='h-6 text-blue-500 hidden sm:inline-flex' />
-               <button hidden type='submit' onClick={search}>Search</button>
+           <button type="submit" onClick={search}>
+            <GoSearch className=" mb-1 h-5 hidden sm:inline-flex text-gray-500 tarnsition duration-100 transform hover:scale-125 " />
+          </button>
              
             </form> 
 
-            <Avatar  className="ml-auto" url='https://coaching.papareact.com/ai9' />
+           
            </div>
 
            <HeaderOptions />

@@ -10,7 +10,10 @@ import {BiSearchAlt2} from 'react-icons/bi'
 
 function HeaderOptions() {
     return (
-      <div className="flex w-full text-gray-700 justify-evenly text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b font-OpenSans">
+      <div className="flex w-full text-gray-700 justify-evenly 
+      text-sm lg:text-base lg:justify-start lg:space-x-36 
+      lg:pl-52 border-b font-OpenSans">
+        
         <div className="flex space-x-6">
           <HeaderOption Icon={BiSearchAlt2} title="All" selected />
           <a href="https://www.google.co.in/imghp?hl=en&ogbl">
