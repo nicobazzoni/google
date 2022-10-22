@@ -9,7 +9,7 @@ function Search({results}) {
 const router = useRouter()
  
   return (
-  <div className=''>
+  <div className='w-full'>
   
   <Head>
     <title>{router.query.term} - Google Search</title>
