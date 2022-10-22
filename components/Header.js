@@ -32,14 +32,14 @@ function Header() {
             <Image 
             src='https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
             onClick={() => router.push("/")}
-            height={100}
-            width={300}
-            className='cursor-pointer '
+            height={40}
+            width={150}
+            className='cursor-pointer mr-2 '
              
             />
            
 
-            <form className='flex flex-grow px-6 py-3 ml-10 mr-5 border border-gray-200 rounded-full shadow-lg max-w-3 items-center '  >
+            <form className='flex flex-grow w-full px-5 py-3   border border-gray-200 rounded-full shadow-lg max-w-3 items-center '  >
                 <input 
                 ref={searchInputRef} 
                 type="text"
@@ -50,7 +50,7 @@ function Header() {
                 onClick={() => (searchInputRef.current.value = "")}
                 />
 
-           <button type="submit" onClick={search}>
+            <button type="submit" onClick={search}>
             <GoSearch className=" mb-1 h-5 hidden sm:inline-flex text-gray-500 tarnsition duration-100 transform hover:scale-125 " />
           </button>
              

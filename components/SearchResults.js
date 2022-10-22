@@ -31,7 +31,7 @@ function SearchResults({ results }) {
               {result.snippet}
             </p>
 
-            <img className
+            <img className='mt-2'
             src={result.pagemap?.cse_image?.[0]?.src}
             
             />
